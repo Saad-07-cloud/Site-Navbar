@@ -1,0 +1,49 @@
+.username{
+    position: relative;
+}
+.control {
+    width: 100%;
+    height: 56px;
+    padding: 0 16px;
+    border: 0;
+    background: #1c1e21;
+    color: #f7f7f7;
+    border-radius: 6px;
+    transition: 0.4s;
+}
+
+.validation {
+    overflow: hidden;
+    height: 0;
+    color: #b13950;
+    transition: 0.3s;
+}
+.validation.invalid{
+    height: 30px;
+}
+@keyframes spin{
+    100% { rotate: 360deg}
+}
+
+.spinner {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    translate: 0 -50%;
+    width: 30px;
+    height: 30px;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 50%;
+    border:
+    3px solid
+    rgb(255 255 255 / 10%);
+    border-top-color: #68e1fd;
+    animation:
+    spin 0.6s infinite linear;
+    transition:0.3s;
+}
+.spinner .loading{
+    visibility: visible;
+    opacity: 1;
+}

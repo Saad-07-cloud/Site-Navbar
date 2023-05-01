@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+          body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+          }
+    
+          .container {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 40px;
+            box-sizing: border-box;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          }
+    
+          h1 {
+            margin-top: 0;
+            font-size: 32px;
+            text-align: center;
+            color: #0080ff;
+          }
+    
+          label {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #555555;
+          }
+    
+          input[type="email"],
+          input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+          }
+    
+          button {
+            background-color: #0080ff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+          }
+    
+          button:hover {
+            background-color: #0066cc;
+          }
+    
+          .signup-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 16px;
+            color: #0080ff;
+            text-decoration: none;
+          }
+          .forgotbutton {
+            margin-top: 20px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #0080ff;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <h1>Login</h1>
+          <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <a href="forgotpassword.html" class="forgotbutton">Forgot Password</a>
+            <br>
+            <br>
+            <button type="submit">Login</button>
+          </form>
+          <a href="signup.html" class="signup-link">Don't have an account? Sign up here.</a>
+        </div>
+      </body>
+    </html>
+    
